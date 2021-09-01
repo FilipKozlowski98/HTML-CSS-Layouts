@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Layout 2</title>
+  </head>
+  <body>
+    <div class="mainWrapper">
+      <header>
+        <div class="header-wrapper">
+          <a
+            class="logo-olx"
+            href="#"
+            title="Ogłoszenia - Sprzedam, kupię na OLX.pl"
+            ><div>
+              <span class="olx-o"></span>
+              <span class="olx-l"></span>
+              <span class="olx-x"></span></div
+          ></a>
+
+          <div class="header-right-side">
+            <a href="#" title="Obserwowane" class="obserwowane"
+              ><svg
+                class="header-right-side-item header-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M6.28 3c3.236.001 4.973 3.491 5.72 5.031.75-1.547 2.469-5.021 5.726-5.021 2.058 0 4.274 1.309 4.274 4.182 0 3.442-4.744 7.851-10 13-5.258-5.151-10-9.559-10-13 0-2.676 1.965-4.193 4.28-4.192zm.001-2c-3.183 0-6.281 2.187-6.281 6.192 0 4.661 5.57 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-4.011-3.097-6.182-6.274-6.182-2.204 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248z"
+                />
+              </svg>
+            </a>
+
+            <a href="#"
+              ><div class="my-olx header-right-side-item">
+                <svg
+                  class="header-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M12 2c2.757 0 5 2.243 5 5.001 0 2.756-2.243 5-5 5s-5-2.244-5-5c0-2.758 2.243-5.001 5-5.001zm0-2c-3.866 0-7 3.134-7 7.001 0 3.865 3.134 7 7 7s7-3.135 7-7c0-3.867-3.134-7.001-7-7.001zm6.369 13.353c-.497.498-1.057.931-1.658 1.302 2.872 1.874 4.378 5.083 4.972 7.346h-19.387c.572-2.29 2.058-5.503 4.973-7.358-.603-.374-1.162-.811-1.658-1.312-4.258 3.072-5.611 8.506-5.611 10.669h24c0-2.142-1.44-7.557-5.631-10.647z"
+                  />
+                </svg>
+                <span class="my-olx-text">Mój OLX</span>
+              </div></a
+            >
+
+            <button class="header-right-side-item">Dodaj ogłoszenie</button>
+          </div>
+        </div>
+      </header>
+
+      <section class="searchbox">
+        <div class="top-bar">
+          <div class="top-bar-upper">
+            <div class="first-input-wrapper">
+              <input type="text" class="first-input" />
+              <svg
+                class="x-button"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#406367"
+                  d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"
+                />
+              </svg>
+            </div>
+
+            <div class="second-input-wrapper">
+              <input
+                type="text"
+                class="second-input"
+                placeholder="Cała Polska"
+              />
+              <svg
+                class="location-button"
+                width="24"
+                height="24"
+                xmlns="http://www.w3.org/2000/svg"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+              >
+                <path
+                  fill="#406367"
+                  d="M12 10c-1.104 0-2-.896-2-2s.896-2 2-2 2 .896 2 2-.896 2-2 2m0-5c-1.657 0-3 1.343-3 3s1.343 3 3 3 3-1.343 3-3-1.343-3-3-3m-7 2.602c0-3.517 3.271-6.602 7-6.602s7 3.085 7 6.602c0 3.455-2.563 7.543-7 14.527-4.489-7.073-7-11.072-7-14.527m7-7.602c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602"
+                />
+              </svg>
+            </div>
+
+            <div class="distance">
+              <span class="distance-item">+ 0 km</span>
+              <svg
+                width="24"
+                height="24"
+                xmlns="http://www.w3.org/2000/svg"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+              >
+                <path
+                  class="distance-item"
+                  fill="currentColor"
+                  d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z"
+                />
+              </svg>
+            </div>
+
+            <a href="#"
+              ><div class="search">
+                <span class="search-item">Szukaj</span>
+                <svg
+                  class="search-item"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M23.809 21.646l-6.205-6.205c1.167-1.605 1.857-3.579 1.857-5.711 0-5.365-4.365-9.73-9.731-9.73-5.365 0-9.73 4.365-9.73 9.73 0 5.366 4.365 9.73 9.73 9.73 2.034 0 3.923-.627 5.487-1.698l6.238 6.238 2.354-2.354zm-20.955-11.916c0-3.792 3.085-6.877 6.877-6.877s6.877 3.085 6.877 6.877-3.085 6.877-6.877 6.877c-3.793 0-6.877-3.085-6.877-6.877z"
+                  />
+                </svg></div
+            ></a>
+          </div>
+
+          <div class="top-bar-bottom">
+            <div class="top-bar-bottom-left">
+              <div class="checkbox-with-text">
+                <input type="checkbox" /> <span>szukaj również w opisach</span>
+              </div>
+              <div class="checkbox-with-text">
+                <input type="checkbox" /> <span>tylko ze zdjęciem</span>
+              </div>
+              <div class="checkbox-with-text">
+                <input type="checkbox" />
+                <svg
+                  width="24"
+                  height="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M3 18h-2c-.552 0-1-.448-1-1v-13c0-.552.448-1 1-1h13c.552 0 1 .448 1 1v2h4.667c1.117 0 1.6.576 1.936 1.107.594.94 1.536 2.432 2.109 3.378.188.312.288.67.288 1.035v4.48c0 1.089-.743 2-2 2h-1c0 1.656-1.344 3-3 3s-3-1.344-3-3h-6c0 1.656-1.344 3-3 3s-3-1.344-3-3zm3-1.2c.662 0 1.2.538 1.2 1.2 0 .662-.538 1.2-1.2 1.2-.662 0-1.2-.538-1.2-1.2 0-.662.538-1.2 1.2-1.2zm12 0c.662 0 1.2.538 1.2 1.2 0 .662-.538 1.2-1.2 1.2-.662 0-1.2-.538-1.2-1.2 0-.662.538-1.2 1.2-1.2zm-3-2.8h-13v2h1.765c.549-.614 1.347-1 2.235-1 .888 0 1.686.386 2.235 1h7.53c.549-.614 1.347-1 2.235-1 .888 0 1.686.386 2.235 1h1.765v-4.575l-1.711-2.929c-.179-.307-.508-.496-.863-.496h-4.426v6zm-2-9h-11v7h11v-7zm3 4v3h5l-1.427-2.496c-.178-.312-.509-.504-.868-.504h-2.705z"
+                  />
+                </svg>
+                <span>tylko z przesyłką OLX</span>
+              </div>
+            </div>
+            <div class="top-bar-bottom-right">
+              <svg
+                class="top-bar-bottom-right-item"
+                width="20"
+                height="20"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181"
+                />
+              </svg>
+              <span class="top-bar-bottom-right-item"
+                >Obserwuj wyszukiwanie</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="filters-top">
+          <h1>Filtry</h1>
+
+          <div class="category-price-wrapper">
+            <div class="category">
+              <p>Kategoria</p>
+              <div class="choose-category">
+                <span>Wybierz kategorię</span>
+                <svg
+                  width="24"
+                  height="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div class="price">
+              <p>Cena</p>
+              <div class="price-range">
+                <div class="price-range-wrapper">
+                  <input type="text" placeholder="od" />
+                </div>
+                <div class="price-range-wrapper">
+                  <input type="text" placeholder="do" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="filters-middle">
+          <div class="filters-middle-wrapper">
+            <a href="#"
+              ><div class="f-1"><span>Wszystkie</span></div></a
+            >
+            <a href="#">
+              <div class="f-2"><span>Prywatne</span></div></a
+            >
+            <a href="#"
+              ><div class="f-2"><span>Firma</span></div></a
+            >
+          </div>
+          <hr />
+        </div>
+
+        <div class="filters-bottom">
+          <div class="filters-bottom-upper">
+            <span>Ogłoszenia - OLX.pl - szukana fraza</span>
+
+            <div class="filters-bottom-upper-right">
+              <span class="sort">Sortuj:</span>
+
+              <div class="sort-wrapper">
+                <span>Najnowsze</span>
+                <svg
+                  width="24"
+                  height="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z"
+                  />
+                </svg>
+              </div>
+
+              <a href="#"
+                ><svg
+                  class="layout-1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M24 3h-24v-2h24v2zm0 3h-24v2h24v-2zm0 5h-24v2h24v-2zm0 5h-24v2h24v-2zm0 5h-24v2h24v-2z"
+                  />
+                </svg>
+              </a>
+
+              <a href="#"
+                ><svg
+                  class="layout-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M11 11h-11v-11h11v11zm13 0h-11v-11h11v11zm-13 13h-11v-11h11v11zm13 0h-11v-11h11v11z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="filters-bottom-lower">
+            <div class="elements-wrapper">
+              <a href="#"
+                ><div class="filters-bottom-lower-element">
+                  <span class="element-topic">Motoryzacja</span>
+                  <span class="element-number">119 033</span>
+                </div></a
+              >
+
+              <a href="#"
+                ><div class="filters-bottom-lower-element">
+                  <span class="element-topic">Dom i Ogród</span>
+                  <span class="element-number">26</span>
+                </div></a
+              >
+
+              <a href="#"
+                ><div class="filters-bottom-lower-element">
+                  <span class="element-topic">Moda</span>
+                  <span class="element-number">46</span>
+                </div></a
+              >
+
+              <a href="#">
+                <div class="filters-bottom-lower-element">
+                  <span class="element-topic">Rolnictwo</span>
+                  <span class="element-number">956</span>
+                </div></a
+              >
+
+              <a href="#"
+                ><div class="filters-bottom-lower-element">
+                  <span class="element-topic">Dla dzieci</span>
+                  <span class="element-number">135</span>
+                </div></a
+              >
+
+              <a href="#"
+                ><div class="filters-bottom-lower-element">
+                  <span class="element-topic">Sport i Hobby</span>
+                  <span class="element-number">1 230</span>
+                </div></a
+              >
+
+              <a href="#"
+                ><div class="filters-bottom-lower-element">
+                  <span class="element-topic">Muzyka i Edukacja</span>
+                  <span class="element-number">1 054</span>
+                </div></a
+              >
+
+              <a href="#">
+                <div class="filters-bottom-lower-element">
+                  <span class="element-topic">Usługi i Firmy</span>
+                  <span class="element-number">295</span>
+                </div></a
+              >
+            </div>
+
+            <span>Pokaż wszystkie</span>
+            <svg
+              width="10"
+              height="10"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z"
+              />
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <main>
+        <section class="highlited">
+          <div class="highlited-top">
+            <h1>Wyróżnione ogłoszenia</h1>
+            <a href="#"><span>Zobacz wszystkie</span></a>
+          </div>
+
+          <div class="highlited-bottom">
+            <div class="offer offer-paid offer-negotiable">
+              <div class="paid">OGŁOSZENIE WYRÓŻNIONE</div>
+              <a href="#"
+                ><img src="images/placeholder.jpg" class="offer-picture" />
+              </a>
+              <a href="#" class="title-link"
+                ><strong class="offer-title">Tytuł oferty</strong></a
+              >
+              <div class="offer-price">
+                <strong class="amount">Cena</strong>
+                <span class="negotiable">Do negocjacji</span>
+              </div>
+              <span class="offer-date">Miasto, Dzielnica - dzień, godzina</span>
+              <div class="offer-follow">
+                <svg
+                  class="follow-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M6.28 3c3.236.001 4.973 3.491 5.72 5.031.75-1.547 2.469-5.021 5.726-5.021 2.058 0 4.274 1.309 4.274 4.182 0 3.442-4.744 7.851-10 13-5.258-5.151-10-9.559-10-13 0-2.676 1.965-4.193 4.28-4.192zm.001-2c-3.183 0-6.281 2.187-6.281 6.192 0 4.661 5.57 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-4.011-3.097-6.182-6.274-6.182-2.204 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248z"
+                  />
+                </svg>
+                <span class="follow-text">Obserwuj</span>
+              </div>
+            </div>
+
+            <div class="offer offer-paid">
+              <div class="paid">OGŁOSZENIE WYRÓŻNIONE</div>
+              <a href="#"
+                ><img src="images/placeholder.jpg" class="offer-picture" />
+              </a>
+              <a href="#" class="title-link"
+                ><strong class="offer-title">Tytuł oferty</strong></a
+              >
+              <div class="offer-price">
+                <strong class="amount">Cena</strong>
+                <span class="negotiable">Do negocjacji</span>
+              </div>
+              <span class="offer-date">Miasto, Dzielnica - dzień, godzina</span>
+              <div class="offer-follow">
+                <svg
+                  class="follow-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M6.28 3c3.236.001 4.973 3.491 5.72 5.031.75-1.547 2.469-5.021 5.726-5.021 2.058 0 4.274 1.309 4.274 4.182 0 3.442-4.744 7.851-10 13-5.258-5.151-10-9.559-10-13 0-2.676 1.965-4.193 4.28-4.192zm.001-2c-3.183 0-6.281 2.187-6.281 6.192 0 4.661 5.57 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-4.011-3.097-6.182-6.274-6.182-2.204 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248z"
+                  />
+                </svg>
+                <span class="follow-text">Obserwuj</span>
+              </div>
+            </div>
+
+            <div class="offer offer-paid offer-negotiable">
+              <div class="paid">OGŁOSZENIE WYRÓŻNIONE</div>
+              <a href="#"
+                ><img src="images/placeholder.jpg" class="offer-picture" />
+              </a>
+              <a href="#" class="title-link"
+                ><strong class="offer-title">Tytuł oferty</strong></a
+              >
+              <div class="offer-price">
+                <strong class="amount">Cena</strong>
+                <span class="negotiable">Do negocjacji</span>
+              </div>
+              <span class="offer-date">Miasto, Dzielnica - dzień, godzina</span>
+              <div class="offer-follow">
+                <svg
+                  class="follow-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M6.28 3c3.236.001 4.973 3.491 5.72 5.031.75-1.547 2.469-5.021 5.726-5.021 2.058 0 4.274 1.309 4.274 4.182 0 3.442-4.744 7.851-10 13-5.258-5.151-10-9.559-10-13 0-2.676 1.965-4.193 4.28-4.192zm.001-2c-3.183 0-6.281 2.187-6.281 6.192 0 4.661 5.57 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-4.011-3.097-6.182-6.274-6.182-2.204 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248z"
+                  />
+                </svg>
+                <span class="follow-text">Obserwuj</span>
+              </div>
+            </div>
+
+            <div class="offer offer-paid offer-negotiable">
+              <div class="paid">OGŁOSZENIE WYRÓŻNIONE</div>
+              <a href="#"
+                ><img src="images/placeholder.jpg" class="offer-picture" />
+              </a>
+              <a href="#" class="title-link"
+                ><strong class="offer-title">Tytuł oferty</strong></a
+              >
+              <div class="offer-price">
+                <strong class="amount">Cena</strong>
+                <span class="negotiable">Do negocjacji</span>
+              </div>
+              <span class="offer-date">Miasto, Dzielnica - dzień, godzina</span>
+              <div class="offer-follow">
+                <svg
+                  class="follow-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M6.28 3c3.236.001 4.973 3.491 5.72 5.031.75-1.547 2.469-5.021 5.726-5.021 2.058 0 4.274 1.309 4.274 4.182 0 3.442-4.744 7.851-10 13-5.258-5.151-10-9.559-10-13 0-2.676 1.965-4.193 4.28-4.192zm.001-2c-3.183 0-6.281 2.187-6.281 6.192 0 4.661 5.57 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-4.011-3.097-6.182-6.274-6.182-2.204 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248z"
+                  />
+                </svg>
+                <span class="follow-text">Obserwuj</span>
+              </div>
+            </div>
+
+            <div class="offer offer-paid">
+              <div class="paid">OGŁOSZENIE WYRÓŻNIONE</div>
+              <a href="#"
+                ><img src="images/placeholder.jpg" class="offer-picture" />
+              </a>
+              <a href="#" class="title-link"
+                ><strong class="offer-title">Tytuł oferty</strong></a
+              >
+              <div class="offer-price">
+                <strong class="amount">Cena</strong>
+                <span class="negotiable">Do negocjacji</span>
+              </div>
+              <span class="offer-date">Miasto, Dzielnica - dzień, godzina</span>
+              <div class="offer-follow">
+                <svg
+                  class="follow-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M6.28 3c3.236.001 4.973 3.491 5.72 5.031.75-1.547 2.469-5.021 5.726-5.021 2.058 0 4.274 1.309 4.274 4.182 0 3.442-4.744 7.851-10 13-5.258-5.151-10-9.559-10-13 0-2.676 1.965-4.193 4.28-4.192zm.001-2c-3.183 0-6.281 2.187-6.281 6.192 0 4.661 5.57 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-4.011-3.097-6.182-6.274-6.182-2.204 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248z"
+                  />
+                </svg>
+                <span class="follow-text">Obserwuj</span>
+              </div>
+            </div>
+
+            <div class="offer offer-paid">
+              <div class="paid">OGŁOSZENIE WYRÓŻNIONE</div>
+              <a href="#"
+                ><img src="images/placeholder.jpg" class="offer-picture" />
+              </a>
+              <a href="#" class="title-link"
+                ><strong class="offer-title">Tytuł oferty</strong></a
+              >
+              <div class="offer-price">
+                <strong class="amount">Cena</strong>
+                <span class="negotiable">Do negocjacji</span>
+              </div>
+              <span class="offer-date">Miasto, Dzielnica - dzień, godzina</span>
+              <div class="offer-follow">
+                <svg
+                  class="follow-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M6.28 3c3.236.001 4.973 3.491 5.72 5.031.75-1.547 2.469-5.021 5.726-5.021 2.058 0 4.274 1.309 4.274 4.182 0 3.442-4.744 7.851-10 13-5.258-5.151-10-9.559-10-13 0-2.676 1.965-4.193 4.28-4.192zm.001-2c-3.183 0-6.281 2.187-6.281 6.192 0 4.661 5.57 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-4.011-3.097-6.182-6.274-6.182-2.204 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248z"
+                  />
+                </svg>
+                <span class="follow-text">Obserwuj</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="rest">
+          <div class="rest-top">
+            <h1>Pozostałe ogłoszenia</h1>
+            <span>ZNALEZIONO 122 649 OGŁOSZEŃ</span>
+          </div>
+
+          <div class="rest-bottom">
+            <div class="offer offer-negotiable">
+              <div class="paid">OGŁOSZENIE WYRÓŻNIONE</div>
+              <a href="#"
+                ><img src="images/placeholder.jpg" class="offer-picture" />
+              </a>
+              <a href="#" class="title-link"
+                ><strong class="offer-title">Tytuł oferty</strong></a
+              >
+              <div class="offer-price">
+                <strong class="amount">Cena</strong>
+                <span class="negotiable">Do negocjacji</span>
+              </div>
+              <span class="offer-date">Miasto, Dzielnica - dzień, godzina</span>
+              <div class="offer-follow">
+                <svg
+                  class="follow-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M6.28 3c3.236.001 4.973 3.491 5.72 5.031.75-1.547 2.469-5.021 5.726-5.021 2.058 0 4.274 1.309 4.274 4.182 0 3.442-4.744 7.851-10 13-5.258-5.151-10-9.559-10-13 0-2.676 1.965-4.193 4.28-4.192zm.001-2c-3.183 0-6.281 2.187-6.281 6.192 0 4.661 5.57 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-4.011-3.097-6.182-6.274-6.182-2.204 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248z"
+                  />
+                </svg>
+                <span class="follow-text">Obserwuj</span>
+              </div>
+            </div>
+
+            <div class="offer">
+              <div class="paid">OGŁOSZENIE WYRÓŻNIONE</div>
+              <a href="#"
+                ><img src="images/placeholder.jpg" class="offer-picture" />
+              </a>
+              <a href="#" class="title-link"
+                ><strong class="offer-title">Tytuł oferty</strong></a
+              >
+              <div class="offer-price">
+                <strong class="amount">Cena</strong>
+                <span class="negotiable">Do negocjacji</span>
+              </div>
+              <span class="offer-date">Miasto, Dzielnica - dzień, godzina</span>
+              <div class="offer-follow">
+                <svg
+                  class="follow-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M6.28 3c3.236.001 4.973 3.491 5.72 5.031.75-1.547 2.469-5.021 5.726-5.021 2.058 0 4.274 1.309 4.274 4.182 0 3.442-4.744 7.851-10 13-5.258-5.151-10-9.559-10-13 0-2.676 1.965-4.193 4.28-4.192zm.001-2c-3.183 0-6.281 2.187-6.281 6.192 0 4.661 5.57 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-4.011-3.097-6.182-6.274-6.182-2.204 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248z"
+                  />
+                </svg>
+                <span class="follow-text">Obserwuj</span>
+              </div>
+            </div>
+
+            <div class="offer">
+              <div class="paid">OGŁOSZENIE WYRÓŻNIONE</div>
+              <a href="#"
+                ><img src="images/placeholder.jpg" class="offer-picture" />
+              </a>
+              <a href="#" class="title-link"
+                ><strong class="offer-title">Tytuł oferty</strong></a
+              >
+              <div class="offer-price">
+                <strong class="amount">Cena</strong>
+                <span class="negotiable">Do negocjacji</span>
+              </div>
+              <span class="offer-date">Miasto, Dzielnica - dzień, godzina</span>
+              <div class="offer-follow">
+                <svg
+                  class="follow-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M6.28 3c3.236.001 4.973 3.491 5.72 5.031.75-1.547 2.469-5.021 5.726-5.021 2.058 0 4.274 1.309 4.274 4.182 0 3.442-4.744 7.851-10 13-5.258-5.151-10-9.559-10-13 0-2.676 1.965-4.193 4.28-4.192zm.001-2c-3.183 0-6.281 2.187-6.281 6.192 0 4.661 5.57 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-4.011-3.097-6.182-6.274-6.182-2.204 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248z"
+                  />
+                </svg>
+                <span class="follow-text">Obserwuj</span>
+              </div>
+            </div>
+
+            <div class="offer offer-negotiable">
+              <div class="paid">OGŁOSZENIE WYRÓŻNIONE</div>
+              <a href="#"
+                ><img src="images/placeholder.jpg" class="offer-picture" />
+              </a>
+              <a href="#" class="title-link"
+                ><strong class="offer-title">Tytuł oferty</strong></a
+              >
+              <div class="offer-price">
+                <strong class="amount">Cena</strong>
+                <span class="negotiable">Do negocjacji</span>
+              </div>
+              <span class="offer-date">Miasto, Dzielnica - dzień, godzina</span>
+              <div class="offer-follow">
+                <svg
+                  class="follow-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M6.28 3c3.236.001 4.973 3.491 5.72 5.031.75-1.547 2.469-5.021 5.726-5.021 2.058 0 4.274 1.309 4.274 4.182 0 3.442-4.744 7.851-10 13-5.258-5.151-10-9.559-10-13 0-2.676 1.965-4.193 4.28-4.192zm.001-2c-3.183 0-6.281 2.187-6.281 6.192 0 4.661 5.57 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-4.011-3.097-6.182-6.274-6.182-2.204 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248z"
+                  />
+                </svg>
+                <span class="follow-text">Obserwuj</span>
+              </div>
+            </div>
+
+            <div class="offer">
+              <div class="paid">OGŁOSZENIE WYRÓŻNIONE</div>
+              <a href="#"
+                ><img src="images/placeholder.jpg" class="offer-picture" />
+              </a>
+              <a href="#" class="title-link"
+                ><strong class="offer-title">Tytuł oferty</strong></a
+              >
+              <div class="offer-price">
+                <strong class="amount">Cena</strong>
+                <span class="negotiable">Do negocjacji</span>
+              </div>
+              <span class="offer-date">Miasto, Dzielnica - dzień, godzina</span>
+              <div class="offer-follow">
+                <svg
+                  class="follow-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M6.28 3c3.236.001 4.973 3.491 5.72 5.031.75-1.547 2.469-5.021 5.726-5.021 2.058 0 4.274 1.309 4.274 4.182 0 3.442-4.744 7.851-10 13-5.258-5.151-10-9.559-10-13 0-2.676 1.965-4.193 4.28-4.192zm.001-2c-3.183 0-6.281 2.187-6.281 6.192 0 4.661 5.57 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-4.011-3.097-6.182-6.274-6.182-2.204 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248z"
+                  />
+                </svg>
+                <span class="follow-text">Obserwuj</span>
+              </div>
+            </div>
+
+            <div class="offer offer-negotiable">
+              <div class="paid">OGŁOSZENIE WYRÓŻNIONE</div>
+              <a href="#"
+                ><img src="images/placeholder.jpg" class="offer-picture" />
+              </a>
+              <a href="#" class="title-link"
+                ><strong class="offer-title">Tytuł oferty</strong></a
+              >
+              <div class="offer-price">
+                <strong class="amount">Cena</strong>
+                <span class="negotiable">Do negocjacji</span>
+              </div>
+              <span class="offer-date">Miasto, Dzielnica - dzień, godzina</span>
+              <div class="offer-follow">
+                <svg
+                  class="follow-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M6.28 3c3.236.001 4.973 3.491 5.72 5.031.75-1.547 2.469-5.021 5.726-5.021 2.058 0 4.274 1.309 4.274 4.182 0 3.442-4.744 7.851-10 13-5.258-5.151-10-9.559-10-13 0-2.676 1.965-4.193 4.28-4.192zm.001-2c-3.183 0-6.281 2.187-6.281 6.192 0 4.661 5.57 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-4.011-3.097-6.182-6.274-6.182-2.204 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248z"
+                  />
+                </svg>
+                <span class="follow-text">Obserwuj</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="offer-nav">
+          <a href="#"
+            ><span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"
+                />
+              </svg> </span
+          ></a>
+          <a href="#"> <span class="number">1</span></a>
+          <a href="#"> <span class="number">2</span></a>
+          <a href="#"> <span class="number">3</span></a>
+          <a href="#"> <span class="number">4</span></a>
+          <a href="#"> <span class="number">5</span></a>
+          <a href="#"> <span class="number">6</span></a>
+          <a href="#"> <span class="number">7</span></a>
+          <a href="#"> <span class="number">8</span></a>
+          <a href="#"> <span class="number">9</span></a>
+          <a href="#"> <span class="number">10</span></a>
+          <a href="#"> <span class="number">11</span></a>
+          <a href="#"> <span class="number">12</span></a>
+          <a href="#"> <span class="number">13</span></a>
+          <a href="#"> <span>...</span></a>
+          <a href="#"><span class="number">25</span></a>
+          <a href="#">
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z"
+                />
+              </svg> </span
+          ></a>
+        </section>
+
+        <hr />
+      </main>
+
+      <section class="bottom-nav">
+        <div class="bottom-nav-upper">
+          <h4>PODOBNE WYSZUKIWANIA:</h4>
+          <div class="bottom-nav-upper-wrapper">
+            <div class="bottom-nav-upper-wrapper-left">
+              <div class="bottom-nav-upper-element">
+                <a href="#"><span class="first">wyszukiwanie 1 </span></a
+                ><span class="second">w kategorii </span
+                ><span class="third">kategoria 1</span>
+              </div>
+
+              <div class="bottom-nav-upper-element">
+                <a href="#"><span class="first">wyszukiwanie 2 </span></a
+                ><span class="second">w kategorii </span
+                ><span class="third">kategoria 2</span>
+              </div>
+
+              <div class="bottom-nav-upper-element">
+                <a href="#"><span class="first">wyszukiwanie 3 </span></a
+                ><span class="second">w kategorii </span
+                ><span class="third">kategoria 3</span>
+              </div>
+
+              <div class="bottom-nav-upper-element">
+                <a href="#"><span class="first">wyszukiwanie 4 </span></a
+                ><span class="second">w kategorii </span
+                ><span class="third">kategoria 4</span>
+              </div>
+
+              <div class="bottom-nav-upper-element">
+                <a href="#"><span class="first">wyszukiwanie 5 </span></a
+                ><span class="second">w kategorii </span
+                ><span class="third">kategoria 5</span>
+              </div>
+            </div>
+
+            <div class="bottom-nav-upper-wrapper-right">
+              <div class="bottom-nav-upper-element">
+                <span class="first">wyszukiwanie 6 </span
+                ><span class="second">w kategorii </span
+                ><span class="third">kategoria 6</span>
+              </div>
+
+              <div class="bottom-nav-upper-element">
+                <span class="first">wyszukiwanie 7 </span
+                ><span class="second">w kategorii </span
+                ><span class="third">kategoria 7</span>
+              </div>
+
+              <div class="bottom-nav-upper-element">
+                <span class="first">wyszukiwanie 8 </span
+                ><span class="second">w kategorii </span
+                ><span class="third">kategoria 8</span>
+              </div>
+
+              <div class="bottom-nav-upper-element">
+                <span class="first">wyszukiwanie 9 </span
+                ><span class="second">w kategorii </span
+                ><span class="third">kategoria 9</span>
+              </div>
+
+              <div class="bottom-nav-upper-element">
+                <span class="first">wyszukiwanie 10 </span
+                ><span class="second">w kategorii </span
+                ><span class="third">kategoria 10</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-nav-middle">
+          <svg
+            class="bottom-nav-middle-item"
+            xmlns="http://www.w3.org/2000/svg"
+            width="64"
+            height="64"
+            viewBox="0 0 28 25"
+          >
+            <path
+              d="M18.5 13.5c0 .828-.56 1.5-1.25 1.5s-1.25-.672-1.25-1.5.56-1.5 1.25-1.5 1.25.672 1.25 1.5zm-6.5 0c0-.828-.56-1.5-1.25-1.5s-1.25.672-1.25 1.5.56 1.5 1.25 1.5 1.25-.672 1.25-1.5zm2 6.854c2.235 0 3-2.354 3-2.354h-6s.847 2.354 3 2.354zm14-3.771c0 5.068-4.115 7.287-8.627 6.481-1.657 1.254-3.476 1.936-5.373 1.936s-3.717-.682-5.374-1.935c-4.511.805-8.626-1.413-8.626-6.482 0-7.998 5.641-16.583 14-16.583s14 8.585 14 16.583zm-6.669 1.252c.122-.202.313-.354.536-.43 1.565-.53 2.133-2.172 2.133-3.146 0-.28-.024-.528-.059-.757-4.181-.021-6.936-5.186-6.823-7.955-1.435 2.322-4.245 5.109-6.993 5.109.781-1.266.766-2.203.625-3.28-.633 1.267-3.118 5.292-6.633 5.85-.072.293-.117.632-.117 1.033 0 .975.568 2.617 2.133 3.146.224.076.414.228.536.43 2.011 3.331 4.614 5.165 7.331 5.165 2.716 0 5.32-1.834 7.331-5.165z"
+            />
+          </svg>
+
+          <span class="bottom-nav-middle-item"
+            >Czy chcesz zapisać aktualne kryteria wyszukiwania?</span
+          >
+
+          <button class="bottom-nav-middle-item">Zapisz wyszukiwanie</button>
+        </div>
+
+        <div class="bottom-nav-bottom">
+          <a href="#"><h4>Kategorie główne</h4></a>
+
+          <a href="#"><span class="bottom-nav-bottom-country">Polska</span></a>
+
+          <div class="bottom-nav-bottom-wrapper">
+            <div class="bottom-nav-bottom-element">
+              <a href="#"><span class="element-region">Śląskie </span></a>
+              <span class="element-number">(21 408)</span>
+            </div>
+            <div class="bottom-nav-bottom-element">
+              <a href="#"><span class="element-region">Mazowieckie </span></a>
+              <span class="element-number">(20 558)</span>
+            </div>
+            <div class="bottom-nav-bottom-element">
+              <a href="#"><span class="element-region">Wielkopolskie </span></a>
+              <span class="element-number">(19 128)</span>
+            </div>
+            <div class="bottom-nav-bottom-element">
+              <a href="#"><span class="element-region">Dolnośląskie </span></a>
+              <span class="element-number">(12 577)</span>
+            </div>
+            <div class="bottom-nav-bottom-element">
+              <a href="#"><span class="element-region">Małopolskie </span></a>
+              <span class="element-number">(11 976)</span>
+            </div>
+            <div class="bottom-nav-bottom-element">
+              <a href="#"><span class="element-region">Łódzkie </span></a>
+              <span class="element-number">(6 915)</span>
+            </div>
+            <div class="bottom-nav-bottom-element">
+              <a href="#"><span class="element-region">Pomorskie </span></a>
+              <span class="element-number">(5 262)</span>
+            </div>
+            <div class="bottom-nav-bottom-element">
+              <a href="#"> <span class="element-region">Lubuskie </span></a>
+              <span class="element-number">(5 038)</span>
+            </div>
+            <div class="bottom-nav-bottom-element">
+              <a href="#"
+                ><span class="element-region">Świętokrzyskie </span></a
+              >
+              <span class="element-number">(4 493)</span>
+            </div>
+            <div class="bottom-nav-bottom-element">
+              <a href="#"
+                ><span class="element-region">Kujawsko-pomorskie </span></a
+              >
+              <span class="element-number">(4 312)</span>
+            </div>
+            <div class="bottom-nav-bottom-element">
+              <a href="#"><span class="element-region">Lubelskie </span></a>
+              <span class="element-number">(3 240)</span>
+            </div>
+            <div class="bottom-nav-bottom-element">
+              <a href="#"><span class="element-region">Podkarpackie </span></a>
+              <span class="element-number">(2 653)</span>
+            </div>
+            <div class="bottom-nav-bottom-element">
+              <a href="#"
+                ><span class="element-region">Zachodniopomorskie </span></a
+              >
+              <span class="element-number">(1 635)</span>
+            </div>
+            <div class="bottom-nav-bottom-element">
+              <a href="#"><span class="element-region">Opolskie </span></a>
+              <span class="element-number">(1 329)</span>
+            </div>
+            <div class="bottom-nav-bottom-element">
+              <a href="#">
+                <span class="element-region">Warmińsko-mazruskie </span></a
+              >
+              <span class="element-number">(1 043)</span>
+            </div>
+            <div class="bottom-nav-bottom-element">
+              <a href="#"><span class="element-region">Podlaskie </span></a>
+              <span class="element-number">(752)</span>
+            </div>
+          </div>
+
+          <span class="bottom-nav-bottom-info"
+            >Ogłoszenia , OLX.pl to bezpłatny serwis ogłoszeniowy w którym
+            znajdziesz ogłoszenia z Twojej okolicy. Dodawaj i przeglądaj
+            ogłoszenia za darmo, znajduj kupujących w okolicy i przeprowadzaj
+            transakcje. Na OLX.pl znajdziesz interesujące ogłoszenia
+            Nieruchomości, Pracy oraz Kupię, Sprzedam.</span
+          >
+        </div>
+      </section>
+
+      <hr />
+
+      <footer>
+        <div class="footer-columns">
+          <div class="footer-column1">
+            <span> <a href="#">Aplikacje mobilne OLX.pl</a></span>
+            <span><a href="#">Pomoc</a></span>
+            <span> <a href="#">Wyróżnione ogłoszenia</a></span>
+            <span><a href="#">Oferta dla firm</a></span>
+            <span><a href="#">Blog</a></span>
+            <span> <a href="#">Regulamin</a></span>
+            <span><a href="#">Polityka prywatności</a></span>
+            <span><a href="#">Reklama</a></span>
+            <span><a href="#">Biuro prasowe</a></span>
+          </div>
+
+          <div class="footer-column2">
+            <span> <a href="#">Jak działa OLX.pl</a></span>
+            <span><a href="#">Zasady bezpieczeństwa</a></span>
+            <span><a href="#">Mapa kategorii</a></span>
+            <span><a href="#">Mapa miejscowości</a></span>
+            <span><a href="#">Popularne wyszukiwania</a></span>
+            <span><a href="#">Kariera</a></span>
+            <span><a href="#">Ustawienia pliów cookie</a></span>
+            <span><a href="#">Kody rabatowe</a></span>
+            <span><a href="#">Ubezpieczenia OC/AC</a></span>
+          </div>
+
+          <div class="footer-column3">
+            <div class="ph-gp"><a href="#"></a></div>
+            <div class="ph-as"><a href="#"></a></div>
+            <div class="images">
+              <img src="images/gp.png" class="img-gp" />
+              <img src="images/as.png" class="img-as" />
+            </div>
+            <span class="text-normal">Darmowa aplikacja na Twój telefon</span>
+            <span class="text-gp"
+              >Do pobrania w <span class="text-gp-m">Google Play</span></span
+            >
+            <span class="text-as"
+              >Pobierz w <span class="text-as-m">Appstore</span></span
+            >
+          </div>
+        </div>
+
+        <div class="footer-partners">
+          <a href="#" class="partner-element">
+            <img src="images/bulgaria.png" class="partner-img" />
+            <span>OLX.bg</span>
+          </a>
+
+          <a href="#" class="partner-element">
+            <img src="images/romania.png" class="partner-img" />
+            <span>OLX.ro</span>
+          </a>
+
+          <a href="#" class="partner-element">
+            <img src="images/ukraine.png" class="partner-img" />
+            <span>OLX.ua</span>
+          </a>
+
+          <a href="#" class="partner-element">
+            <img src="images/bulgaria.png" class="partner-img" />
+            <span>Fixly.pl</span>
+          </a>
+
+          <a href="#" class="partner-element">
+            <img src="images/romania.png" class="partner-img" />
+            <span>Otodom.pl</span>
+          </a>
+
+          <a href="#" class="partner-element">
+            <img src="images/ukraine.png" class="partner-img" />
+            <span>Otomoto.pl</span>
+          </a>
+
+          <a href="#" class="partner-element">
+            <img src="images/bulgaria.png" class="partner-img" />
+            <span>obido.pl</span>
+          </a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1793 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Layout 3</title>
+  </head>
+  <body>
+    <div class="mainWrapper">
+      <header>
+        <div class="header__left">
+          <button data-title="Menu główne">
+            <svg
+              focusable="false"
+              width="24px"
+              height="24px"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+              ></path>
+            </svg>
+          </button>
+
+          <a href="#"
+            ><img src="images/main-logo.png" alt="" title="Gmail"
+          /></a>
+
+          <div class="header__searchbar">
+            <button data-title="Szukaj">
+              <svg
+                focusable="false"
+                height="24px"
+                viewBox="0 0 24 24"
+                width="24px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill="currentColor"
+                  d="M20.49,19l-5.73-5.73C15.53,12.2,16,10.91,16,9.5C16,5.91,13.09,3,9.5,3S3,5.91,3,9.5C3,13.09,5.91,16,9.5,16 c1.41,0,2.7-0.47,3.77-1.24L19,20.49L20.49,19z M5,9.5C5,7.01,7.01,5,9.5,5S14,7.01,14,9.5S11.99,14,9.5,14S5,11.99,5,9.5z"
+                ></path>
+              </svg>
+            </button>
+
+            <input type="text" placeholder="Przeszukaj pocztę" />
+
+            <button data-title="Pokaż opcje wyszukiwania">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M3 17v2h6v-2H3zM3 5v2h10V5H3zm10 16v-2h8v-2h-8v-2h-2v6h2zM7 9v2H3v2h4v2h2V9H7zm14 4v-2H11v2h10zm-6-4h2V7h4V5h-4V3h-2v6z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="header__right">
+          <button data-title="Pomoc">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24px"
+              height="24px"
+              viewBox="0 0 24 24"
+              fill="#000000"
+              focusable="false"
+            >
+              <path
+                fill="currentColor"
+                d="M11 18h2v-2h-2v2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4z"
+              ></path>
+            </svg>
+          </button>
+
+          <button data-title="Ustawienia">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M13.85 22.25h-3.7c-.74 0-1.36-.54-1.45-1.27l-.27-1.89c-.27-.14-.53-.29-.79-.46l-1.8.72c-.7.26-1.47-.03-1.81-.65L2.2 15.53c-.35-.66-.2-1.44.36-1.88l1.53-1.19c-.01-.15-.02-.3-.02-.46 0-.15.01-.31.02-.46l-1.52-1.19c-.59-.45-.74-1.26-.37-1.88l1.85-3.19c.34-.62 1.11-.9 1.79-.63l1.81.73c.26-.17.52-.32.78-.46l.27-1.91c.09-.7.71-1.25 1.44-1.25h3.7c.74 0 1.36.54 1.45 1.27l.27 1.89c.27.14.53.29.79.46l1.8-.72c.71-.26 1.48.03 1.82.65l1.84 3.18c.36.66.2 1.44-.36 1.88l-1.52 1.19c.01.15.02.3.02.46s-.01.31-.02.46l1.52 1.19c.56.45.72 1.23.37 1.86l-1.86 3.22c-.34.62-1.11.9-1.8.63l-1.8-.72c-.26.17-.52.32-.78.46l-.27 1.91c-.1.68-.72 1.22-1.46 1.22zm-3.23-2h2.76l.37-2.55.53-.22c.44-.18.88-.44 1.34-.78l.45-.34 2.38.96 1.38-2.4-2.03-1.58.07-.56c.03-.26.06-.51.06-.78s-.03-.53-.06-.78l-.07-.56 2.03-1.58-1.39-2.4-2.39.96-.45-.35c-.42-.32-.87-.58-1.33-.77l-.52-.22-.37-2.55h-2.76l-.37 2.55-.53.21c-.44.19-.88.44-1.34.79l-.45.33-2.38-.95-1.39 2.39 2.03 1.58-.07.56a7 7 0 0 0-.06.79c0 .26.02.53.06.78l.07.56-2.03 1.58 1.38 2.4 2.39-.96.45.35c.43.33.86.58 1.33.77l.53.22.38 2.55z"
+              ></path>
+              <circle cx="12" cy="12" r="3.5" fill="currentColor"></circle>
+            </svg>
+          </button>
+
+          <button data-title-right="Aplikacje Google">
+            <svg
+              focusable="false"
+              width="24px"
+              height="24px"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"
+              ></path>
+            </svg>
+          </button>
+
+          <button data-title-right="Użytkownik">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm7.753 18.305c-.261-.586-.789-.991-1.871-1.241-2.293-.529-4.428-.993-3.393-2.945 3.145-5.942.833-9.119-2.489-9.119-3.388 0-5.644 3.299-2.489 9.119 1.066 1.964-1.148 2.427-3.393 2.945-1.084.25-1.608.658-1.867 1.246-1.405-1.723-2.251-3.919-2.251-6.31 0-5.514 4.486-10 10-10s10 4.486 10 10c0 2.389-.845 4.583-2.247 6.305z"
+              />
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <aside class="aside__left">
+        <button><img src="images/aside-plus.png" />Utwórz</button>
+
+        <div class="aside__left__mainNav">
+          <a
+            href="#"
+            class="mainNav__item mainNav__item--active"
+            data-title-left="Odebrane"
+            ><img
+              src="images/aside-odebrane.png"
+              alt=""
+              class="mainNav__img--notOpaque"
+            />
+            <div>Odebrane<span>1 677</span></div>
+          </a>
+
+          <a href="#" class="mainNav__item" data-title-left="Oznaczone gwiazdką"
+            ><img src="images/aside-gwiazdka.png" alt="" />Oznaczone gwiazdką</a
+          >
+
+          <a href="#" class="mainNav__item" data-title-left="Odłożone"
+            ><img src="images/aside-odlozone.png" alt="" />Odłożone</a
+          >
+
+          <a href="#" class="mainNav__item" data-title-left="Ważne"
+            ><img src="images/aside-wazne.png" alt="" />Ważne</a
+          >
+
+          <a href="#" class="mainNav__item" data-title-left="Wysłane"
+            ><img src="images/aside-wyslane.png" alt="" />Wysłane</a
+          >
+
+          <a
+            href="#"
+            class="mainNav__item mainNav__item--bold"
+            data-title-left="Wersje robocze"
+            ><img src="images/aside-robocze.png" alt="" />
+            <div>Wersje robocze<span>11</span></div>
+          </a>
+
+          <button
+            class="mainNav__item mainNav__item--bold"
+            data-title-left="Kategorie"
+          >
+            <img
+              class="mainNav__img--floating"
+              src="images/aside-kategorie.png"
+              alt=""
+            /><img
+              src="images/aside-kategorie-osobiste.png"
+              alt=""
+              class="mainNav__img--notOpaque"
+            />Kategorie
+          </button>
+
+          <a href="#" class="mainNav__item" data-title-left="Osobiste"
+            ><img
+              src="images/aside-kategorie-osobiste.png"
+              alt=""
+              class="mainNav__img--notOpaque"
+            />Osobiste</a
+          >
+
+          <button class="mainNav__item">
+            <img src="images/aside-more.png" alt="" />Więcej
+          </button>
+        </div>
+
+        <div class="aside__left__meet">
+          <span>Meet</span>
+          <a href="#" class="meet__item" data-title-left="Nowe spotkanie"
+            ><img src="images/aside-nowespotkanie.png" alt="" />Nowe
+            spotkanie</a
+          >
+          <button class="meet__item" data-title-left="Dołącz do spotkania">
+            <img src="images/aside-dolaczdospotkania.png" alt="" />Dołącz do
+            spotkania
+          </button>
+        </div>
+
+        <div class="aside__left__hangouts">
+          <span>Hangouty</span>
+
+          <div class="hangouts__user">
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm7.753 18.305c-.261-.586-.789-.991-1.871-1.241-2.293-.529-4.428-.993-3.393-2.945 3.145-5.942.833-9.119-2.489-9.119-3.388 0-5.644 3.299-2.489 9.119 1.066 1.964-1.148 2.427-3.393 2.945-1.084.25-1.608.658-1.867 1.246-1.405-1.723-2.251-3.919-2.251-6.31 0-5.514 4.486-10 10-10s10 4.486 10 10c0 2.389-.845 4.583-2.247 6.305z"
+                />
+              </svg>
+              <span>Użytkownik</span>
+              <svg
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                width="6"
+                height="6"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12 21l-12-18h24z" />
+              </svg>
+            </button>
+            <button title="Nowa rozmowa">
+              <svg
+                fill="currentColor"
+                width="20px"
+                height="20px"
+                viewBox="0 0 48 48"
+                class="pTh3n ydLZ9 f"
+              >
+                <path d="M38 26H26v12h-4V26H10v-4h12V10h4v12h12v4z"></path>
+              </svg>
+            </button>
+          </div>
+
+          <div class="hangouts__contacts">
+            <div></div>
+            <span>Brak kontaktów w hangouts</span>
+            <a href="#">Znajdź kogoś</a>
+          </div>
+
+          <div class="hangouts__nav">
+            <button
+              class="hangouts__nav--active"
+              data-title-bottom="Kontakty w Hangouts"
+            >
+              <img src="images/aside-hangoutuser.png" alt="" />
+            </button>
+            <button data-title-bottom="Rozmowy w Hangouts"><div></div></button>
+            <button data-title-bottom="Połączenia w Hangouts">
+              <div></div>
+            </button>
+          </div>
+        </div>
+      </aside>
+
+      <aside class="aside__right">
+        <div class="aside__right__top">
+          <button data-title-right="Kalendarz">
+            <img src="images/aside-kalendarz.png" alt="" />
+          </button>
+          <button data-title-right="Keep">
+            <img src="images/aside-keep.png" alt="" />
+          </button>
+          <button data-title-right="Lista zadań">
+            <img src="images/aside-lista.png" alt="" />
+          </button>
+          <button data-title-right="Kontakty">
+            <img src="images/aside-kontakty.png" alt="" />
+          </button>
+          <div class="spacer"></div>
+          <button data-title-right="Pobierz dodatki">
+            <svg
+              fill="currentColor"
+              width="20px"
+              height="20px"
+              viewBox="0 0 48 48"
+              class="pTh3n ydLZ9 f"
+            >
+              <path d="M38 26H26v12h-4V26H10v-4h12V10h4v12h12v4z"></path>
+            </svg>
+          </button>
+        </div>
+
+        <button data-title-bottom="Ukryj panel boczny">
+          <img src="images/main/main-right.png" />
+        </button>
+      </aside>
+
+      <main>
+        <nav class="main__messNav">
+          <div class="messNav__left">
+            <div data-title="Wybierz">
+              <div class="messNav__checkbox">
+                <input type="checkbox" id="custom__checkbox__messNav" />
+                <label for="custom__checkbox__messNav"></label>
+              </div>
+              <button>
+                <svg
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="6"
+                  height="6"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M12 21l-12-18h24z" />
+                </svg>
+              </button>
+            </div>
+            <button data-title="Odśiweż">
+              <img src="images/main/main-refresh.png" alt="" />
+            </button>
+            <button data-title="Więcej">
+              <img src="images/main/main-more.png" alt="" />
+            </button>
+          </div>
+
+          <div class="messNav__right">
+            <button class="messNav__right__item--numbers">1-100 z 2 441</button>
+            <button data-title="Nowsze">
+              <img src="images/main/main-left.png" alt="" />
+            </button>
+            <button data-title="Starsze">
+              <img src="images/main/main-right.png" alt="" />
+            </button>
+            <div>
+              <button
+                class="messNav__right__keyboard"
+                data-title-far-right="Włącz/wyłącz narzędzia do wprowadzania tekstu (Ctrl+Shift+K)"
+              ></button>
+              <button
+                data-title-far-right="Wybierz narzędzie do wprowadzania tekstu"
+              >
+                <svg
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="6"
+                  height="6"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M12 21l-12-18h24z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <div class="mailsWrapper">
+          <section class="main__categories">
+            <div class="categories__item categories__item--active">
+              <img
+                src="images/aside-odebrane.png"
+                alt=""
+                class="categories__img--notOpaque"
+              />Główne
+            </div>
+            <div class="categories__item">
+              <img src="images/main/main-spolecznosci.png" alt="" />Społeczności
+            </div>
+            <div class="categories__item">
+              <img src="images/main/main-oferty.png" alt="" />Oferty
+            </div>
+          </section>
+
+          <section class="main__mails">
+            <div class="mails__item mails__item--star">
+              <div class="mails__checkbox" data-title="Wybierz">
+                <input type="checkbox" id="custom__checkbox__mails" />
+                <label for="custom__checkbox__mails"></label>
+              </div>
+
+              <button
+                class="mails__starButton"
+                data-title="Nie oznaczono gwiazdką"
+              ></button>
+
+              <button
+                class="mails__importantButton"
+                data-title="Kliknij, aby poinformować usługe Gmail, że ten wątek jest ważny "
+              ></button>
+
+              <div class="mails__sender">
+                <span>Nadawca 1</span>
+              </div>
+
+              <div class="mails__content">
+                <div class="mails__title">
+                  <span>Tytuł 1</span>
+                </div>
+
+                <span class="mails__spacer">-</span>
+
+                <div class="mails__description">
+                  <span
+                    >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Ex alias eos consequuntur quisquam, molestias qui
+                    reprehenderit modi quae neque dolores doloremque nihil
+                    repudiandae dicta quis iusto officia dolorem? Eos,
+                    excepturi!</span
+                  >
+                </div>
+              </div>
+
+              <div class="mails__date">
+                <span>6 sie</span>
+              </div>
+
+              <div class="mails__nav">
+                <ul>
+                  <li>
+                    <button data-title="Archiwizuj">
+                      <img src="images/main/main-archive.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title="Usuń">
+                      <img src="images/main/main-delete.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title-right="Oznacz jako nieprzeczytane">
+                      <img src="images/main/main-mark.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title="Odłóż">
+                      <img src="images/main/main-later.png" />
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mails__item mails__item--opened">
+              <div class="mails__checkbox" data-title="Wybierz">
+                <input type="checkbox" id="custom__checkbox__mails" />
+                <label for="custom__checkbox__mails"></label>
+              </div>
+
+              <button
+                class="mails__starButton"
+                data-title="Nie oznaczono gwiazdką"
+              ></button>
+
+              <button
+                class="mails__importantButton"
+                data-title="Kliknij, aby poinformować usługe Gmail, że ten wątek jest ważny "
+              ></button>
+
+              <div class="mails__sender">
+                <span>Nadawca 2</span>
+              </div>
+
+              <div class="mails__content">
+                <div class="mails__title">
+                  <span>Tytuł 2</span>
+                </div>
+
+                <span class="mails__spacer">-</span>
+
+                <div class="mails__description">
+                  <span
+                    >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Ex alias eos consequuntur quisquam, molestias qui
+                    reprehenderit modi quae neque dolores doloremque nihil
+                    repudiandae dicta quis iusto officia dolorem? Eos,
+                    excepturi!</span
+                  >
+                </div>
+              </div>
+
+              <div class="mails__date">
+                <span>6 sie</span>
+              </div>
+
+              <div class="mails__nav">
+                <ul>
+                  <li>
+                    <button data-title="Archiwizuj">
+                      <img src="images/main/main-archive.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title="Usuń">
+                      <img src="images/main/main-delete.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title-right="Oznacz jako nieprzeczytane">
+                      <img src="images/main/main-mark.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title="Odłóż">
+                      <img src="images/main/main-later.png" />
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mails__item mails__item--important">
+              <div class="mails__checkbox" data-title="Wybierz">
+                <input type="checkbox" id="custom__checkbox__mails" />
+                <label for="custom__checkbox__mails"></label>
+              </div>
+
+              <button
+                class="mails__starButton"
+                data-title="Nie oznaczono gwiazdką"
+              ></button>
+
+              <button
+                class="mails__importantButton"
+                data-title="Kliknij, aby poinformować usługe Gmail, że ten wątek jest ważny "
+              ></button>
+
+              <div class="mails__sender">
+                <span>Nadawca 3</span>
+              </div>
+
+              <div class="mails__content">
+                <div class="mails__title">
+                  <span>Tytuł 3</span>
+                </div>
+
+                <span class="mails__spacer">-</span>
+
+                <div class="mails__description">
+                  <span
+                    >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Ex alias eos consequuntur quisquam, molestias qui
+                    reprehenderit modi quae neque dolores doloremque nihil
+                    repudiandae dicta quis iusto officia dolorem? Eos,
+                    excepturi!</span
+                  >
+                </div>
+              </div>
+
+              <div class="mails__date">
+                <span>6 sie</span>
+              </div>
+
+              <div class="mails__nav">
+                <ul>
+                  <li>
+                    <button data-title="Archiwizuj">
+                      <img src="images/main/main-archive.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title="Usuń">
+                      <img src="images/main/main-delete.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title-right="Oznacz jako nieprzeczytane">
+                      <img src="images/main/main-mark.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title="Odłóż">
+                      <img src="images/main/main-later.png" />
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mails__item">
+              <div class="mails__checkbox" data-title="Wybierz">
+                <input type="checkbox" id="custom__checkbox__mails" />
+                <label for="custom__checkbox__mails"></label>
+              </div>
+
+              <button
+                class="mails__starButton"
+                data-title="Nie oznaczono gwiazdką"
+              ></button>
+
+              <button
+                class="mails__importantButton"
+                data-title="Kliknij, aby poinformować usługe Gmail, że ten wątek jest ważny "
+              ></button>
+
+              <div class="mails__sender">
+                <span>Nadawca 4</span>
+              </div>
+
+              <div class="mails__content">
+                <div class="mails__title">
+                  <span>Tytuł 4</span>
+                </div>
+
+                <span class="mails__spacer">-</span>
+
+                <div class="mails__description">
+                  <span
+                    >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Ex alias eos consequuntur quisquam, molestias qui
+                    reprehenderit modi quae neque dolores doloremque nihil
+                    repudiandae dicta quis iusto officia dolorem? Eos,
+                    excepturi!</span
+                  >
+                </div>
+              </div>
+
+              <div class="mails__date">
+                <span>6 sie</span>
+              </div>
+
+              <div class="mails__nav">
+                <ul>
+                  <li>
+                    <button data-title="Archiwizuj">
+                      <img src="images/main/main-archive.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title="Usuń">
+                      <img src="images/main/main-delete.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title-right="Oznacz jako nieprzeczytane">
+                      <img src="images/main/main-mark.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title="Odłóż">
+                      <img src="images/main/main-later.png" />
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              class="
+                mails__item
+                mails__item--opened
+                mails__item--star
+                mails__item--important
+              "
+            >
+              <div class="mails__checkbox" data-title="Wybierz">
+                <input type="checkbox" id="custom__checkbox__mails" />
+                <label for="custom__checkbox__mails"></label>
+              </div>
+
+              <button
+                class="mails__starButton"
+                data-title="Nie oznaczono gwiazdką"
+              ></button>
+
+              <button
+                class="mails__importantButton"
+                data-title="Kliknij, aby poinformować usługe Gmail, że ten wątek jest ważny "
+              ></button>
+
+              <div class="mails__sender">
+                <span>Nadawca 5</span>
+              </div>
+
+              <div class="mails__content">
+                <div class="mails__title">
+                  <span>Tytuł 5</span>
+                </div>
+
+                <span class="mails__spacer">-</span>
+
+                <div class="mails__description">
+                  <span
+                    >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Ex alias eos consequuntur quisquam, molestias qui
+                    reprehenderit modi quae neque dolores doloremque nihil
+                    repudiandae dicta quis iusto officia dolorem? Eos,
+                    excepturi!</span
+                  >
+                </div>
+              </div>
+
+              <div class="mails__date">
+                <span>6 sie</span>
+              </div>
+
+              <div class="mails__nav">
+                <ul>
+                  <li>
+                    <button data-title="Archiwizuj">
+                      <img src="images/main/main-archive.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title="Usuń">
+                      <img src="images/main/main-delete.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title-right="Oznacz jako nieprzeczytane">
+                      <img src="images/main/main-mark.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title="Odłóż">
+                      <img src="images/main/main-later.png" />
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mails__item mails__item--opened mails__item--star">
+              <div class="mails__checkbox" data-title="Wybierz">
+                <input type="checkbox" id="custom__checkbox__mails" />
+                <label for="custom__checkbox__mails"></label>
+              </div>
+
+              <button
+                class="mails__starButton"
+                data-title="Nie oznaczono gwiazdką"
+              ></button>
+
+              <button
+                class="mails__importantButton"
+                data-title="Kliknij, aby poinformować usługe Gmail, że ten wątek jest ważny "
+              ></button>
+
+              <div class="mails__sender">
+                <span>Nadawca 6</span>
+              </div>
+
+              <div class="mails__content">
+                <div class="mails__title">
+                  <span>Tytuł 6</span>
+                </div>
+
+                <span class="mails__spacer">-</span>
+
+                <div class="mails__description">
+                  <span
+                    >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Ex alias eos consequuntur quisquam, molestias qui
+                    reprehenderit modi quae neque dolores doloremque nihil
+                    repudiandae dicta quis iusto officia dolorem? Eos,
+                    excepturi!</span
+                  >
+                </div>
+              </div>
+
+              <div class="mails__date">
+                <span>6 sie</span>
+              </div>
+
+              <div class="mails__nav">
+                <ul>
+                  <li>
+                    <button data-title="Archiwizuj">
+                      <img src="images/main/main-archive.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title="Usuń">
+                      <img src="images/main/main-delete.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title-right="Oznacz jako nieprzeczytane">
+                      <img src="images/main/main-mark.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title="Odłóż">
+                      <img src="images/main/main-later.png" />
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mails__item mails__item--opened mails__item--important">
+              <div class="mails__checkbox" data-title="Wybierz">
+                <input type="checkbox" id="custom__checkbox__mails" />
+                <label for="custom__checkbox__mails"></label>
+              </div>
+
+              <button
+                class="mails__starButton"
+                data-title="Nie oznaczono gwiazdką"
+              ></button>
+
+              <button
+                class="mails__importantButton"
+                data-title="Kliknij, aby poinformować usługe Gmail, że ten wątek jest ważny "
+              ></button>
+
+              <div class="mails__sender">
+                <span>Nadawca 7</span>
+              </div>
+
+              <div class="mails__content">
+                <div class="mails__title">
+                  <span>Tytuł 7</span>
+                </div>
+
+                <span class="mails__spacer">-</span>
+
+                <div class="mails__description">
+                  <span
+                    >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Ex alias eos consequuntur quisquam, molestias qui
+                    reprehenderit modi quae neque dolores doloremque nihil
+                    repudiandae dicta quis iusto officia dolorem? Eos,
+                    excepturi!</span
+                  >
+                </div>
+              </div>
+
+              <div class="mails__date">
+                <span>6 sie</span>
+              </div>
+
+              <div class="mails__nav">
+                <ul>
+                  <li>
+                    <button data-title="Archiwizuj">
+                      <img src="images/main/main-archive.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title="Usuń">
+                      <img src="images/main/main-delete.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title-right="Oznacz jako nieprzeczytane">
+                      <img src="images/main/main-mark.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title="Odłóż">
+                      <img src="images/main/main-later.png" />
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mails__item mails__item--important">
+              <div class="mails__checkbox" data-title="Wybierz">
+                <input type="checkbox" id="custom__checkbox__mails" />
+                <label for="custom__checkbox__mails"></label>
+              </div>
+
+              <button
+                class="mails__starButton"
+                data-title="Nie oznaczono gwiazdką"
+              ></button>
+
+              <button
+                class="mails__importantButton"
+                data-title="Kliknij, aby poinformować usługe Gmail, że ten wątek jest ważny "
+              ></button>
+
+              <div class="mails__sender">
+                <span>Nadawca 8</span>
+              </div>
+
+              <div class="mails__content">
+                <div class="mails__title">
+                  <span>Tytuł 8</span>
+                </div>
+
+                <span class="mails__spacer">-</span>
+
+                <div class="mails__description">
+                  <span
+                    >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Ex alias eos consequuntur quisquam, molestias qui
+                    reprehenderit modi quae neque dolores doloremque nihil
+                    repudiandae dicta quis iusto officia dolorem? Eos,
+                    excepturi!</span
+                  >
+                </div>
+              </div>
+
+              <div class="mails__date">
+                <span>6 sie</span>
+              </div>
+
+              <div class="mails__nav">
+                <ul>
+                  <li>
+                    <button data-title="Archiwizuj">
+                      <img src="images/main/main-archive.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title="Usuń">
+                      <img src="images/main/main-delete.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title-right="Oznacz jako nieprzeczytane">
+                      <img src="images/main/main-mark.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title="Odłóż">
+                      <img src="images/main/main-later.png" />
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mails__item mails__item--star">
+              <div class="mails__checkbox" data-title="Wybierz">
+                <input type="checkbox" id="custom__checkbox__mails" />
+                <label for="custom__checkbox__mails"></label>
+              </div>
+
+              <button
+                class="mails__starButton"
+                data-title="Nie oznaczono gwiazdką"
+              ></button>
+
+              <button
+                class="mails__importantButton"
+                data-title="Kliknij, aby poinformować usługe Gmail, że ten wątek jest ważny "
+              ></button>
+
+              <div class="mails__sender">
+                <span>Nadawca 9</span>
+              </div>
+
+              <div class="mails__content">
+                <div class="mails__title">
+                  <span>Tytuł 9</span>
+                </div>
+
+                <span class="mails__spacer">-</span>
+
+                <div class="mails__description">
+                  <span
+                    >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Ex alias eos consequuntur quisquam, molestias qui
+                    reprehenderit modi quae neque dolores doloremque nihil
+                    repudiandae dicta quis iusto officia dolorem? Eos,
+                    excepturi!</span
+                  >
+                </div>
+              </div>
+
+              <div class="mails__date">
+                <span>6 sie</span>
+              </div>
+
+              <div class="mails__nav">
+                <ul>
+                  <li>
+                    <button data-title="Archiwizuj">
+                      <img src="images/main/main-archive.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title="Usuń">
+                      <img src="images/main/main-delete.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title-right="Oznacz jako nieprzeczytane">
+                      <img src="images/main/main-mark.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title="Odłóż">
+                      <img src="images/main/main-later.png" />
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mails__item">
+              <div class="mails__checkbox" data-title="Wybierz">
+                <input type="checkbox" id="custom__checkbox__mails" />
+                <label for="custom__checkbox__mails"></label>
+              </div>
+
+              <button
+                class="mails__starButton"
+                data-title="Nie oznaczono gwiazdką"
+              ></button>
+
+              <button
+                class="mails__importantButton"
+                data-title="Kliknij, aby poinformować usługe Gmail, że ten wątek jest ważny "
+              ></button>
+
+              <div class="mails__sender">
+                <span>Nadawca 10</span>
+              </div>
+
+              <div class="mails__content">
+                <div class="mails__title">
+                  <span>Tytuł 10</span>
+                </div>
+
+                <span class="mails__spacer">-</span>
+
+                <div class="mails__description">
+                  <span
+                    >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Ex alias eos consequuntur quisquam, molestias qui
+                    reprehenderit modi quae neque dolores doloremque nihil
+                    repudiandae dicta quis iusto officia dolorem? Eos,
+                    excepturi!</span
+                  >
+                </div>
+              </div>
+
+              <div class="mails__date">
+                <span>6 sie</span>
+              </div>
+
+              <div class="mails__nav">
+                <ul>
+                  <li>
+                    <button data-title="Archiwizuj">
+                      <img src="images/main/main-archive.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title="Usuń">
+                      <img src="images/main/main-delete.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title-right="Oznacz jako nieprzeczytane">
+                      <img src="images/main/main-mark.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title="Odłóż">
+                      <img src="images/main/main-later.png" />
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mails__item mails__item--opened">
+              <div class="mails__checkbox" data-title="Wybierz">
+                <input type="checkbox" id="custom__checkbox__mails" />
+                <label for="custom__checkbox__mails"></label>
+              </div>
+
+              <button
+                class="mails__starButton"
+                data-title="Nie oznaczono gwiazdką"
+              ></button>
+
+              <button
+                class="mails__importantButton"
+                data-title="Kliknij, aby poinformować usługe Gmail, że ten wątek jest ważny "
+              ></button>
+
+              <div class="mails__sender">
+                <span>Nadawca 11</span>
+              </div>
+
+              <div class="mails__content">
+                <div class="mails__title">
+                  <span>Tytuł 11</span>
+                </div>
+
+                <span class="mails__spacer">-</span>
+
+                <div class="mails__description">
+                  <span
+                    >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Ex alias eos consequuntur quisquam, molestias qui
+                    reprehenderit modi quae neque dolores doloremque nihil
+                    repudiandae dicta quis iusto officia dolorem? Eos,
+                    excepturi!</span
+                  >
+                </div>
+              </div>
+
+              <div class="mails__date">
+                <span>6 sie</span>
+              </div>
+
+              <div class="mails__nav">
+                <ul>
+                  <li>
+                    <button data-title="Archiwizuj">
+                      <img src="images/main/main-archive.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title="Usuń">
+                      <img src="images/main/main-delete.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title-right="Oznacz jako nieprzeczytane">
+                      <img src="images/main/main-mark.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title="Odłóż">
+                      <img src="images/main/main-later.png" />
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              class="
+                mails__item
+                mails__item--opened
+                mails__item--star
+                mails__item--important
+              "
+            >
+              <div class="mails__checkbox" data-title="Wybierz">
+                <input type="checkbox" id="custom__checkbox__mails" />
+                <label for="custom__checkbox__mails"></label>
+              </div>
+
+              <button
+                class="mails__starButton"
+                data-title="Nie oznaczono gwiazdką"
+              ></button>
+
+              <button
+                class="mails__importantButton"
+                data-title="Kliknij, aby poinformować usługe Gmail, że ten wątek jest ważny "
+              ></button>
+
+              <div class="mails__sender">
+                <span>Nadawca 12</span>
+              </div>
+
+              <div class="mails__content">
+                <div class="mails__title">
+                  <span>Tytuł 12</span>
+                </div>
+
+                <span class="mails__spacer">-</span>
+
+                <div class="mails__description">
+                  <span
+                    >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Ex alias eos consequuntur quisquam, molestias qui
+                    reprehenderit modi quae neque dolores doloremque nihil
+                    repudiandae dicta quis iusto officia dolorem? Eos,
+                    excepturi!</span
+                  >
+                </div>
+              </div>
+
+              <div class="mails__date">
+                <span>6 sie</span>
+              </div>
+
+              <div class="mails__nav">
+                <ul>
+                  <li>
+                    <button data-title="Archiwizuj">
+                      <img src="images/main/main-archive.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title="Usuń">
+                      <img src="images/main/main-delete.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title-right="Oznacz jako nieprzeczytane">
+                      <img src="images/main/main-mark.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title="Odłóż">
+                      <img src="images/main/main-later.png" />
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mails__item">
+              <div class="mails__checkbox" data-title="Wybierz">
+                <input type="checkbox" id="custom__checkbox__mails" />
+                <label for="custom__checkbox__mails"></label>
+              </div>
+
+              <button
+                class="mails__starButton"
+                data-title="Nie oznaczono gwiazdką"
+              ></button>
+
+              <button
+                class="mails__importantButton"
+                data-title="Kliknij, aby poinformować usługe Gmail, że ten wątek jest ważny "
+              ></button>
+
+              <div class="mails__sender">
+                <span>Nadawca 13</span>
+              </div>
+
+              <div class="mails__content">
+                <div class="mails__title">
+                  <span>Tytuł 13</span>
+                </div>
+
+                <span class="mails__spacer">-</span>
+
+                <div class="mails__description">
+                  <span
+                    >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Ex alias eos consequuntur quisquam, molestias qui
+                    reprehenderit modi quae neque dolores doloremque nihil
+                    repudiandae dicta quis iusto officia dolorem? Eos,
+                    excepturi!</span
+                  >
+                </div>
+              </div>
+
+              <div class="mails__date">
+                <span>6 sie</span>
+              </div>
+
+              <div class="mails__nav">
+                <ul>
+                  <li>
+                    <button data-title="Archiwizuj">
+                      <img src="images/main/main-archive.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title="Usuń">
+                      <img src="images/main/main-delete.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title-right="Oznacz jako nieprzeczytane">
+                      <img src="images/main/main-mark.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title="Odłóż">
+                      <img src="images/main/main-later.png" />
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mails__item">
+              <div class="mails__checkbox" data-title="Wybierz">
+                <input type="checkbox" id="custom__checkbox__mails" />
+                <label for="custom__checkbox__mails"></label>
+              </div>
+
+              <button
+                class="mails__starButton"
+                data-title="Nie oznaczono gwiazdką"
+              ></button>
+
+              <button
+                class="mails__importantButton"
+                data-title="Kliknij, aby poinformować usługe Gmail, że ten wątek jest ważny "
+              ></button>
+
+              <div class="mails__sender">
+                <span>Nadawca 14</span>
+              </div>
+
+              <div class="mails__content">
+                <div class="mails__title">
+                  <span>Tytuł 14</span>
+                </div>
+
+                <span class="mails__spacer">-</span>
+
+                <div class="mails__description">
+                  <span
+                    >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Ex alias eos consequuntur quisquam, molestias qui
+                    reprehenderit modi quae neque dolores doloremque nihil
+                    repudiandae dicta quis iusto officia dolorem? Eos,
+                    excepturi!</span
+                  >
+                </div>
+              </div>
+
+              <div class="mails__date">
+                <span>6 sie</span>
+              </div>
+
+              <div class="mails__nav">
+                <ul>
+                  <li>
+                    <button data-title="Archiwizuj">
+                      <img src="images/main/main-archive.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title="Usuń">
+                      <img src="images/main/main-delete.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title-right="Oznacz jako nieprzeczytane">
+                      <img src="images/main/main-mark.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title="Odłóż">
+                      <img src="images/main/main-later.png" />
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mails__item mails__item--star">
+              <div class="mails__checkbox" data-title="Wybierz">
+                <input type="checkbox" id="custom__checkbox__mails" />
+                <label for="custom__checkbox__mails"></label>
+              </div>
+
+              <button
+                class="mails__starButton"
+                data-title="Nie oznaczono gwiazdką"
+              ></button>
+
+              <button
+                class="mails__importantButton"
+                data-title="Kliknij, aby poinformować usługe Gmail, że ten wątek jest ważny "
+              ></button>
+
+              <div class="mails__sender">
+                <span>Nadawca 15</span>
+              </div>
+
+              <div class="mails__content">
+                <div class="mails__title">
+                  <span>Tytuł 15</span>
+                </div>
+
+                <span class="mails__spacer">-</span>
+
+                <div class="mails__description">
+                  <span
+                    >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Ex alias eos consequuntur quisquam, molestias qui
+                    reprehenderit modi quae neque dolores doloremque nihil
+                    repudiandae dicta quis iusto officia dolorem? Eos,
+                    excepturi!</span
+                  >
+                </div>
+              </div>
+
+              <div class="mails__date">
+                <span>6 sie</span>
+              </div>
+
+              <div class="mails__nav">
+                <ul>
+                  <li>
+                    <button data-title="Archiwizuj">
+                      <img src="images/main/main-archive.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title="Usuń">
+                      <img src="images/main/main-delete.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title-right="Oznacz jako nieprzeczytane">
+                      <img src="images/main/main-mark.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title="Odłóż">
+                      <img src="images/main/main-later.png" />
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mails__item">
+              <div class="mails__checkbox" data-title="Wybierz">
+                <input type="checkbox" id="custom__checkbox__mails" />
+                <label for="custom__checkbox__mails"></label>
+              </div>
+
+              <button
+                class="mails__starButton"
+                data-title="Nie oznaczono gwiazdką"
+              ></button>
+
+              <button
+                class="mails__importantButton"
+                data-title="Kliknij, aby poinformować usługe Gmail, że ten wątek jest ważny "
+              ></button>
+
+              <div class="mails__sender">
+                <span>Nadawca 16</span>
+              </div>
+
+              <div class="mails__content">
+                <div class="mails__title">
+                  <span>Tytuł 16</span>
+                </div>
+
+                <span class="mails__spacer">-</span>
+
+                <div class="mails__description">
+                  <span
+                    >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Ex alias eos consequuntur quisquam, molestias qui
+                    reprehenderit modi quae neque dolores doloremque nihil
+                    repudiandae dicta quis iusto officia dolorem? Eos,
+                    excepturi!</span
+                  >
+                </div>
+              </div>
+
+              <div class="mails__date">
+                <span>6 sie</span>
+              </div>
+
+              <div class="mails__nav">
+                <ul>
+                  <li>
+                    <button data-title="Archiwizuj">
+                      <img src="images/main/main-archive.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title="Usuń">
+                      <img src="images/main/main-delete.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title-right="Oznacz jako nieprzeczytane">
+                      <img src="images/main/main-mark.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title="Odłóż">
+                      <img src="images/main/main-later.png" />
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mails__item mails__item--opened">
+              <div class="mails__checkbox" data-title="Wybierz">
+                <input type="checkbox" id="custom__checkbox__mails" />
+                <label for="custom__checkbox__mails"></label>
+              </div>
+
+              <button
+                class="mails__starButton"
+                data-title="Nie oznaczono gwiazdką"
+              ></button>
+
+              <button
+                class="mails__importantButton"
+                data-title="Kliknij, aby poinformować usługe Gmail, że ten wątek jest ważny "
+              ></button>
+
+              <div class="mails__sender">
+                <span>Nadawca 17</span>
+              </div>
+
+              <div class="mails__content">
+                <div class="mails__title">
+                  <span>Tytuł 17</span>
+                </div>
+
+                <span class="mails__spacer">-</span>
+
+                <div class="mails__description">
+                  <span
+                    >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Ex alias eos consequuntur quisquam, molestias qui
+                    reprehenderit modi quae neque dolores doloremque nihil
+                    repudiandae dicta quis iusto officia dolorem? Eos,
+                    excepturi!</span
+                  >
+                </div>
+              </div>
+
+              <div class="mails__date">
+                <span>6 sie</span>
+              </div>
+
+              <div class="mails__nav">
+                <ul>
+                  <li>
+                    <button data-title="Archiwizuj">
+                      <img src="images/main/main-archive.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title="Usuń">
+                      <img src="images/main/main-delete.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title-right="Oznacz jako nieprzeczytane">
+                      <img src="images/main/main-mark.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title="Odłóż">
+                      <img src="images/main/main-later.png" />
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mails__item mails__item--opened mails__item--important">
+              <div class="mails__checkbox" data-title="Wybierz">
+                <input type="checkbox" id="custom__checkbox__mails" />
+                <label for="custom__checkbox__mails"></label>
+              </div>
+
+              <button
+                class="mails__starButton"
+                data-title="Nie oznaczono gwiazdką"
+              ></button>
+
+              <button
+                class="mails__importantButton"
+                data-title="Kliknij, aby poinformować usługe Gmail, że ten wątek jest ważny "
+              ></button>
+
+              <div class="mails__sender">
+                <span>Nadawca 18</span>
+              </div>
+
+              <div class="mails__content">
+                <div class="mails__title">
+                  <span>Tytuł 18</span>
+                </div>
+
+                <span class="mails__spacer">-</span>
+
+                <div class="mails__description">
+                  <span
+                    >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Ex alias eos consequuntur quisquam, molestias qui
+                    reprehenderit modi quae neque dolores doloremque nihil
+                    repudiandae dicta quis iusto officia dolorem? Eos,
+                    excepturi!</span
+                  >
+                </div>
+              </div>
+
+              <div class="mails__date">
+                <span>6 sie</span>
+              </div>
+
+              <div class="mails__nav">
+                <ul>
+                  <li>
+                    <button data-title="Archiwizuj">
+                      <img src="images/main/main-archive.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title="Usuń">
+                      <img src="images/main/main-delete.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title-right="Oznacz jako nieprzeczytane">
+                      <img src="images/main/main-mark.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title="Odłóż">
+                      <img src="images/main/main-later.png" />
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mails__item mails__item--important">
+              <div class="mails__checkbox" data-title="Wybierz">
+                <input type="checkbox" id="custom__checkbox__mails" />
+                <label for="custom__checkbox__mails"></label>
+              </div>
+
+              <button
+                class="mails__starButton"
+                data-title="Nie oznaczono gwiazdką"
+              ></button>
+
+              <button
+                class="mails__importantButton"
+                data-title="Kliknij, aby poinformować usługe Gmail, że ten wątek jest ważny "
+              ></button>
+
+              <div class="mails__sender">
+                <span>Nadawca 19</span>
+              </div>
+
+              <div class="mails__content">
+                <div class="mails__title">
+                  <span>Tytuł 19</span>
+                </div>
+
+                <span class="mails__spacer">-</span>
+
+                <div class="mails__description">
+                  <span
+                    >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Ex alias eos consequuntur quisquam, molestias qui
+                    reprehenderit modi quae neque dolores doloremque nihil
+                    repudiandae dicta quis iusto officia dolorem? Eos,
+                    excepturi!</span
+                  >
+                </div>
+              </div>
+
+              <div class="mails__date">
+                <span>6 sie</span>
+              </div>
+
+              <div class="mails__nav">
+                <ul>
+                  <li>
+                    <button data-title="Archiwizuj">
+                      <img src="images/main/main-archive.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title="Usuń">
+                      <img src="images/main/main-delete.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title-right="Oznacz jako nieprzeczytane">
+                      <img src="images/main/main-mark.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title="Odłóż">
+                      <img src="images/main/main-later.png" />
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mails__item mails__item--opened">
+              <div class="mails__checkbox" data-title="Wybierz">
+                <input type="checkbox" id="custom__checkbox__mails" />
+                <label for="custom__checkbox__mails"></label>
+              </div>
+
+              <button
+                class="mails__starButton"
+                data-title="Nie oznaczono gwiazdką"
+              ></button>
+
+              <button
+                class="mails__importantButton"
+                data-title="Kliknij, aby poinformować usługe Gmail, że ten wątek jest ważny "
+              ></button>
+
+              <div class="mails__sender">
+                <span>Nadawca 20</span>
+              </div>
+
+              <div class="mails__content">
+                <div class="mails__title">
+                  <span>Tytuł 20</span>
+                </div>
+
+                <span class="mails__spacer">-</span>
+
+                <div class="mails__description">
+                  <span
+                    >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Ex alias eos consequuntur quisquam, molestias qui
+                    reprehenderit modi quae neque dolores doloremque nihil
+                    repudiandae dicta quis iusto officia dolorem? Eos,
+                    excepturi!</span
+                  >
+                </div>
+              </div>
+
+              <div class="mails__date">
+                <span>6 sie</span>
+              </div>
+
+              <div class="mails__nav">
+                <ul>
+                  <li>
+                    <button data-title="Archiwizuj">
+                      <img src="images/main/main-archive.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title="Usuń">
+                      <img src="images/main/main-delete.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title-right="Oznacz jako nieprzeczytane">
+                      <img src="images/main/main-mark.png" />
+                    </button>
+                  </li>
+                  <li>
+                    <button data-title="Odłóż">
+                      <img src="images/main/main-later.png" />
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section class="mails__bottom">
+            <a href="#" class="mails__bottom__memory">
+              <div class="mails__memoryBar">
+                <div class="mails__memoryProgress"></div>
+              </div>
+              <div class="mails__memoryText">
+                <span>Używasz 0,16GB z 15 GB</span>
+                <img src="images/main/main-memory.png" />
+              </div>
+            </a>
+
+            <div class="mails__bottom__legal">
+              <a href="#">Warunki</a>
+              <span>.</span>
+              <a href="#">Prywatność</a>
+              <span>.</span>
+              <a href="#">Zasady programu</a>
+            </div>
+
+            <div class="mails__bottom__activity">
+              <span>Ostatnia aktywność konta: 1 godzinę temu</span>
+              <a href="#">Szczegóły</a>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
